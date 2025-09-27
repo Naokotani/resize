@@ -1,17 +1,22 @@
-# This package is no longer being updated! Please look for alternatives if that bothers you.
+Image resizing for the [Go programming language](http://golang.org) with common interpolation methods.
 
 Resize
 ======
+This is a **fork of [github.com/nfnt/resize](https://github.com/nfnt/resize)** that is actively maintain.
 
-Image resizing for the [Go programming language](http://golang.org) with common interpolation methods.
+This fork is licensed under the same MIT license.
 
-[![Build Status](https://travis-ci.org/nfnt/resize.svg)](https://travis-ci.org/nfnt/resize)
+## Why this fork?
+
+- Original package is no longer maintained.
+- Add Go modules (`go.mod`) support.
+- Bug fixes and small improvements.
 
 Installation
 ------------
 
 ```bash
-$ go get github.com/nfnt/resize
+$ go get github.com/Naokotani/resize
 ```
 
 It's that easy!
@@ -22,7 +27,7 @@ Usage
 This package needs at least Go 1.1. Import package with
 
 ```go
-import "github.com/nfnt/resize"
+import "github.com/Naokotani/resize"
 ```
 
 The resize package provides 2 functions:
@@ -54,7 +59,7 @@ Sample usage:
 package main
 
 import (
-	"github.com/nfnt/resize"
+	"github.com/Naokotani/resize"
 	"image/jpeg"
 	"log"
 	"os"
@@ -105,47 +110,17 @@ Resize tries to provide sane defaults that should suffice in most cases.
 
 ### Artificial sample
 
-Original image
-![Rings](http://nfnt.github.com/img/rings_lg_orig.png)
-
-<table>
-<tr>
-<th><img src="http://nfnt.github.com/img/rings_300_NearestNeighbor.png" /><br>Nearest-Neighbor</th>
-<th><img src="http://nfnt.github.com/img/rings_300_Bilinear.png" /><br>Bilinear</th>
-</tr>
-<tr>
-<th><img src="http://nfnt.github.com/img/rings_300_Bicubic.png" /><br>Bicubic</th>
-<th><img src="http://nfnt.github.com/img/rings_300_MitchellNetravali.png" /><br>Mitchell-Netravali</th>
-</tr>
-<tr>
-<th><img src="http://nfnt.github.com/img/rings_300_Lanczos2.png" /><br>Lanczos2</th>
-<th><img src="http://nfnt.github.com/img/rings_300_Lanczos3.png" /><br>Lanczos3</th>
-</tr>
-</table>
+TODO: The samples from the original repo are broken, create new samples
 
 ### Real-Life sample
 
-Original image  
-![Original](http://nfnt.github.com/img/IMG_3694_720.jpg)
-
-<table>
-<tr>
-<th><img src="http://nfnt.github.com/img/IMG_3694_300_NearestNeighbor.png" /><br>Nearest-Neighbor</th>
-<th><img src="http://nfnt.github.com/img/IMG_3694_300_Bilinear.png" /><br>Bilinear</th>
-</tr>
-<tr>
-<th><img src="http://nfnt.github.com/img/IMG_3694_300_Bicubic.png" /><br>Bicubic</th>
-<th><img src="http://nfnt.github.com/img/IMG_3694_300_MitchellNetravali.png" /><br>Mitchell-Netravali</th>
-</tr>
-<tr>
-<th><img src="http://nfnt.github.com/img/IMG_3694_300_Lanczos2.png" /><br>Lanczos2</th>
-<th><img src="http://nfnt.github.com/img/IMG_3694_300_Lanczos3.png" /><br>Lanczos3</th>
-</tr>
-</table>
-
+TODO: The samples from the original repo are broken, create new samples
 
 License
 -------
 
 Copyright (c) 2012 Jan Schlicht <janschlicht@gmail.com>
+
+Copyright (c) 2025 Chris Hughes <chris@chris-hughes.dev>
+
 Resize is released under a MIT style license.
